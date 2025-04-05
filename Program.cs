@@ -13,7 +13,20 @@ class Program
         myRectangle.Describe(); // This will call the Describe method from the IShape interface
         Console.WriteLine("Area of the rectangle: " + myRectangle.GetArea());
 
-         LinqExample linqExample = new LinqExample(); // Uncomment to run LINQ example
-         linqExample.EvenNumbers(); // Uncomment to run LINQ example
+        LinqExample linqExample = new LinqExample(); // Uncomment to run LINQ example
+        linqExample.EvenNumbers(); // Uncomment to run LINQ example
+
+        linqExample.studentsFromNewYork(); // Uncomment to run LINQ example
+        linqExample.studentsName(); // Uncomment to run LINQ example
+        linqExample.studentsAge(); // Uncomment to run LINQ example
+        linqExample.studentsAgeByAscending(); // Uncomment to run LINQ example
+        linqExample.studentsAgeByCondition(); // Uncomment to run LINQ example
+        
+
+        Collections collectionsExample = new Collections(); // Uncomment to run Collections example
+        collectionsExample.ListFunctions(); // Uncomment to run Collections example
+        collectionsExample.DictionaryFunctions(); // Uncomment to run Collections example
+        collectionsExample.HashSetFunctions(); // Uncomment to run Collections example
+
     }
 }
