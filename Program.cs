@@ -31,5 +31,10 @@ class Program
         ADONetExample aDONetExample = new ADONetExample(); // Uncomment to run ADO.NET example
         aDONetExample.ConnectToDatabase(); // Uncomment to run ADO.NET example
 
+        staticExample staticExample = new staticExample(); // Uncomment to run Static example
+
+        Console.WriteLine("Static Variable: " + staticExample.StaticMethod()); // Uncomment to run Static example
+        Console.WriteLine("Static Field: " + staticExample.x); // Uncomment to run Static example
+
     }
 }

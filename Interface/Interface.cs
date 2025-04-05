@@ -1,7 +1,7 @@
 interface IShape
 {
     // private double id;
-    double GetArea();
+    double GetAreas();
     double Describe();
 }
 
@@ -16,7 +16,7 @@ class Rectangle : IShape
         this.height = height;
     }
 
-    public double GetArea()
+    public double GetAreas()
     {
         return width * height;
     }
