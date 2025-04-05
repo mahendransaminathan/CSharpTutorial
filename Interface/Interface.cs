@@ -1,7 +1,10 @@
 interface IShape
 {
-    // private double id;
-    double GetAreas();
+
+    double GetAreas()
+    {
+        return 0; // Default implementation, can be overridden
+    }
     double Describe();
 }
 
@@ -9,6 +12,10 @@ class Rectangle : IShape
 {
     private double width;
     private double height;
+
+    public int id { get; set; } // Property for id
+
+    protected double radius;
 
     public Rectangle(double width, double height)
     {
@@ -21,9 +28,9 @@ class Rectangle : IShape
         return width * height;
     }
 
-    public double Describe()
-    {
-        Console.WriteLine("This is a rectangle.");
-        return 0; // Just to satisfy the interface requirement
-    }
+    // public double Describe()
+    // {
+    //     Console.WriteLine("This is a rectangle.");
+    //     return 0; // Just to satisfy the interface requirement
+    // }
 }

@@ -9,9 +9,12 @@ class Program
         // // myShape.Describe(); // This will call the Describe method from the Shape class
         // Console.WriteLine("Area of the circle: " + myShape.GetArea());
     
-        // IShape myRectangle = new Rectangle(4, 5);
-        // myRectangle.Describe(); // This will call the Describe method from the IShape interface
-        // Console.WriteLine("Area of the rectangle: " + myRectangle.GetArea());
+        IShape myRectangle = new Rectangle(4, 5);
+        Rectangle myRectangle2 = new Rectangle(4, 5);
+        myRectangle2.id = 1; // Setting the id property
+        // myRectangle2.radius = 2; // Setting the radius property
+        myRectangle.Describe(); // This will call the Describe method from the IShape interface
+        Console.WriteLine("Area of the rectangle: " + myRectangle2.id);
 
         // LinqExample linqExample = new LinqExample(); // Uncomment to run LINQ example
         // linqExample.EvenNumbers(); // Uncomment to run LINQ example
