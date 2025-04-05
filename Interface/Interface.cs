@@ -28,9 +28,9 @@ class Rectangle : IShape
         return width * height;
     }
 
-    // public double Describe()
-    // {
-    //     Console.WriteLine("This is a rectangle.");
-    //     return 0; // Just to satisfy the interface requirement
-    // }
+    public double Describe()
+    {
+        Console.WriteLine("This is a rectangle.");
+        return 0; // Just to satisfy the interface requirement
+    }
 }
